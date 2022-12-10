@@ -1,0 +1,33 @@
+# name of our workflow
+name: Push to ssr server
+
+# triggers for our workflow
+on:
+  # trigger manually
+  workflow_dispatch:
+  # any time release is created
+  release:
+    types: [ published ]
+
+jobs:
+  production:
+    env:
+      HOST_PASSWORD: ${{ secrets.HOST_PASSWORD }}
+    # Name the Job
+    name: Build and deploy to  self-hosted
+    # Set the type of machine to run on
+    runs-on: self-hosted
+    steps:
+      # Checks out a copy of your repository on the ubuntu-latest machine
+      - name: Checkout code
+        uses: actions/checkout@master
+
+      - name: Install packages
+        run: npm i
+
+      - name: Build project
+        run: npm run build
+
+      - name: Reload daemon
+        run: |
+          echo "$HOST_PASSWORD" | sudo -S systemctl restart vue-luxor | sudo -S sh /home/user/luxor-vue/restart_ssr.sh

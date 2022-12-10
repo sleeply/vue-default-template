@@ -1,0 +1,52 @@
+{
+  "main": {},
+  "months": {
+    "january": "Yanvar",
+    "february": "Fevral",
+    "march": "Mart",
+    "april": "Aprel",
+    "may": "May",
+    "june": "Iyun",
+    "july": "Iyul",
+    "august": "Avgust",
+    "september": "Sentyabr",
+    "october": "Oktyabr",
+    "november": "Noyabr",
+    "december": "Dekabr"
+  },
+  "shortMonths": {
+    "january": "Yan",
+    "february": "Fev",
+    "march": "Mar",
+    "april": "Apr",
+    "may": "May",
+    "june": "Iyun",
+    "july": "Iyul",
+    "august": "Avg",
+    "september": "Sen",
+    "october": "Okt",
+    "november": "Noy",
+    "december": "Dek"
+  },
+  "days": {
+    "now": "Hozir",
+    "today": "Bugun",
+    "yesterday": "Kecha",
+    "tomorrow": "Ertaga",
+    "0": "Yak",
+    "1": "Du",
+    "2": "Se",
+    "3": "Chor",
+    "4": "Pay",
+    "5": "Juma",
+    "6": "Shan"
+  },
+  "expression_date": {
+    "day": "kun",
+    "of_the_day": "kun",
+    "days": "kun"
+  },
+  "top": {
+    "search": "Saytdan qidirish"
+  }
+}

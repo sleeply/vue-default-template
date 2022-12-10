@@ -1,0 +1,127 @@
+:root {
+  --primary-font-color: #121212;
+  --secondary-font-color: #fff;
+  --highlight-font-color: #007bff;
+
+  --primary-bg: rgba(255, 255, 255, 1);
+  --secondary-bg: #181818;
+  --background-color: #cecece;
+  --foreground-color: #121212;
+
+  --index: calc(1vw + 1vh);
+  font-size: calc(max(var(--index) * 0.545, 16px));
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+img[alt] {
+  color: transparent;
+}
+
+img:after {
+  font-weight: 900;
+  font-family: "Font Awesome 5 Pro";
+  content: "\f071"" Broken Image of " attr(alt);
+  display: block;
+  font-size: 16px;
+  font-style: normal;
+  color: rgb(100, 100, 100);
+
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+}
+
+img {
+  background-color: lightgray;
+  object-fit: cover;
+}
+
+blockquote {
+  border-left: 0.3em solid grey;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-style: italic;
+
+  p {
+    padding: 0.6em 2em;
+  }
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+i,
+em {
+  font-style: italic;
+}
+
+input,
+textarea,
+button,
+select,
+div,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {
+  background-color: var(--background-color);
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.limited-text {
+  --snup: 3;
+  display: -webkit-box;
+  -webkit-line-clamp: var(--snup);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1024) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+  }
+}
+
+@media screen and (max-width: 600px) {
+  :root {
+  }
+}

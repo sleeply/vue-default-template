@@ -1,0 +1,17 @@
+{
+  "include": ["src/**/*", "src/**/*.vue"],
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "CommonJS",
+    "useDefineForClassFields": true,
+    "baseUrl": "./",
+    "lib": ["DOM", "DOM.Iterable", "ESNext", "ESNext.AsyncIterable"],
+    "paths": {
+      "@/*": ["src/*"],
+      "@components/*": ["src/components/*"],
+      "@core/*": ["src/core/*"]
+    },
+    "types": ["@types/node"]
+  },
+  "exclude": ["node_modules"]
+}

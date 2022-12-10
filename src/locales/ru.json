@@ -1,0 +1,52 @@
+{
+  "main": {},
+  "months": {
+    "january": "Январь",
+    "february": "Февраль",
+    "march": "Март",
+    "april": "Апрель",
+    "may": "Май",
+    "june": "Июнь",
+    "july": "Июль",
+    "august": "Август",
+    "september": "Сентябрь",
+    "october": "Октябрь",
+    "november": "Ноябрь",
+    "december": "Декабрь"
+  },
+  "shortMonths": {
+    "january": "Янв",
+    "february": "Фев",
+    "march": "Мар",
+    "april": "Апр",
+    "may": "Май",
+    "june": "Июнь",
+    "july": "Июль",
+    "august": "Авг",
+    "september": "Сен",
+    "october": "Окт",
+    "november": "Ноя",
+    "december": "Дек"
+  },
+  "days": {
+    "now": "Сейчас",
+    "today": "Сегодня",
+    "yesterday": "Вчера",
+    "tomorrow": "Завтра",
+    "0": "Вс",
+    "1": "Пн",
+    "2": "Вт",
+    "3": "Ср",
+    "4": "Чт",
+    "5": "Пт",
+    "6": "Сб"
+  },
+  "expression_date": {
+    "day": "день",
+    "of_the_day": "дня",
+    "days": "дней"
+  },
+  "top": {
+    "search": "Поиск по сайту"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "main": {},
+  "months": {
+    "january": "January",
+    "february": "February",
+    "march": "March",
+    "april": "April",
+    "may": "May",
+    "june": "June",
+    "july": "July",
+    "august": "August",
+    "september": "September",
+    "october": "October",
+    "november": "November",
+    "december": "December"
+  },
+  "shortMonths": {
+    "january": "Jan",
+    "february": "Feb",
+    "march": "Mar",
+    "april": "Apr",
+    "may": "May",
+    "june": "Jun",
+    "july": "Jul",
+    "august": "Aug",
+    "september": "Sep",
+    "october": "Oct",
+    "november": "Nov",
+    "december": "Dec"
+  },
+  "days": {
+    "now": "Now",
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "tomorrow": "Tomorrow",
+    "0": "Sun",
+    "1": "Mon",
+    "2": "Tues",
+    "3": "Wed",
+    "4": "Thurs",
+    "5": "Fri",
+    "6": "Sat"
+  },
+  "expression_date": {
+    "day": "day",
+    "of_the_day": "days",
+    "days": "days"
+  },
+  "top": {
+    "search": "Search"
+  }
+}
