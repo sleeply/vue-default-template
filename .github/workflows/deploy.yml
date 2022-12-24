@@ -1,32 +1,43 @@
-name: Firebase Continuous Deployment
+# name of our workflow
+name: Push to ssr server
 
+# triggers for our workflow
 on:
-  # push:
-  #   branches: [ master ]
-
-  # Allows you to run this workflow manually from the Actions tab
+  # trigger manually
   workflow_dispatch:
 
+  # any time release is created
+  # release:
+  #   types: [ published ]
+
+  push:
+    branches: [ master ]
+
 jobs:
-  # Set the job key. The key is displayed as the job name
-  # when a job name is not provided
-  deploy:
+  production:
+    # env:
+    #   HOST_PASSWORD: ${{ secrets.HOST_PASSWORD }}
     # Name the Job
-    name: Build and deploy to firebase
+    name: Build and deploy to  self-hosted
     # Set the type of machine to run on
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       # Checks out a copy of your repository on the ubuntu-latest machine
       - name: Checkout code
         uses: actions/checkout@master
 
-      - uses: actions/setup-node@master
+      - uses: actions/setup-node@v2
         with:
-          node_version: 12
-      - run: npm ci
-      - run: npm run build
-      - uses: w9jds/firebase-action@master
-        with:
-          args: deploy --only hosting
-        env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+          node-version-file: '.nvmrc'
+
+      - name: Install packages
+        run: npm i
+
+      - name: Build project
+        run: npm run build:client
+          
+      # - name: Restart nginx
+      #   run: |
+      #     echo "$HOST_PASSWORD" | sudo -S systemctl restart nginx
+      #   continue-on-error: true
+          
